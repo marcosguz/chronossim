@@ -4,5 +4,6 @@ public enum AlgorithmType {
     FCFS,
     SJF,
     RR,
-    PRIORITY
+    PRIORITY,
+    CHS
 }

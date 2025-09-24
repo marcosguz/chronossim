@@ -41,6 +41,7 @@ public class SimulationServiceImpl implements SimulationService {
             case SJF -> new SJFScheduler();
             case RR -> new RRScheduler(request.getQuantum() != null ? request.getQuantum() : 2);
             case PRIORITY -> new PriorityScheduler();
+            case CHS -> new CHSScheduler();
             default -> throw new IllegalArgumentException("Algoritmo no Soportado: " + request.getAlgorithm());
         };
     }
